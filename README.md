@@ -1,6 +1,6 @@
 # wc3_protocol
-![Gem](https://img.shields.io/gem/v/wc3_protocol?color=default&style=plastic&logo=ruby&logoColor=red)
-![Gem](https://img.shields.io/gem/dt/wc3_protocol?color=blue&style=plastic)
+[![Gem](https://img.shields.io/gem/v/wc3_protocol?color=default&style=plastic&logo=ruby&logoColor=red)](https://rubygems.org/gems/wc3_protocol)
+![downloads](https://img.shields.io/gem/dt/wc3_protocol?color=blue&style=plastic)
 [![License: MIT](https://img.shields.io/badge/License-MIT-gold.svg?style=plastic&logo=mit)](LICENSE)
 
 > The ruby gem to find and retrieve information of Warcraft3 games
