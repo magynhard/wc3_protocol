@@ -75,6 +75,7 @@ module Wc3Protocol
       rescue Timeout::Error
         # messages received until timeout
       end
+      @udp_socket.close # ensure socket is closed after
       raw_messages.map { |m| Wc3Protocol::Message.new(raw_msg: m.message, raw_sender_info: m.sender_info) }
     end
 
