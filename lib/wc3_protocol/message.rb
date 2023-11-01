@@ -90,10 +90,11 @@ module Wc3Protocol
 
         # extract map name from 14th byte
         @game_map_name = decrypted_string[13..-1]
+        # cut string at NULL string termination byte
+        @game_map_name = @game_map_name[0..@game_map_name.index("\x00")-1]
 
         # Get last segment of map name that is split by '\\'
         last_map_name_segment = @game_map_name.split('\\').last
-        last_map_name_segment = last_map_name_segment[0..(last_map_name_segment.index('.w3') + 4)]
 
         # use original map name if no segment is found
         @game_map_name = last_map_name_segment || @game_map_name
